@@ -1,3 +1,3 @@
 public interface ResourceManager {
-    LibraryResource findResource(String title);
+    public LibraryResource findResource(String title);
 }

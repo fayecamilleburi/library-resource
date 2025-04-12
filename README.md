@@ -11,3 +11,12 @@ Your solution should not violate other SOLID principles.
 Make sure you have a TestProgram that will validate the proposed refactored codes.
 
 ## UML Class Diagram
+![SOLID-Principles-w-Design-Pattern](image.png)
+* Design Pattern Used: **Strategy Pattern**
+
+### SOLID Alignment:
+* **S**: Each class has one responsibility (`Book`, `Journal`, `Student`, etc.).
+* **O**: Easily add new types (e.g., `EJournal`) without modifying existing code.
+* **L**: Substitution works --- `Student` doesn't care what the resource type is.
+* **I**: Interfaces are minimal and specific (`LibraryResource`, `ResourceManager`).
+* **D**: `Student` depends on `LibraryResource` and `ResourceManager`, not concrete classes.
